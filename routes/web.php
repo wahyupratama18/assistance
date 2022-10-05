@@ -33,7 +33,8 @@ Route::prefix('modul')->name('modul.')->group(function () {
             ->name('semester')
             ->where([
                 'sks' => '[0-9+]',
-                'semester' => '[0-9]+', 'param' => 'gt|gte|lt|lte',
+                'semester' => '[0-9]+',
+                'arithmetic' => 'gt|gte|lt|lte',
             ]);
         });
 
